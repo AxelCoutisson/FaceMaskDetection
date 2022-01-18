@@ -4,7 +4,7 @@
 Here is the yoloV5 version of our mask detection. The notable difference with yolov4 is on the speed of treatment with much more images per second.
 
 ## Install
-###Linux
+### Linux
 
 ```console
 mkdir yolo
@@ -17,7 +17,7 @@ cd yolov5
 pip install -r requirements.txt
 ```
 
-###Windows
+### Windows
 
 ## Start
 
