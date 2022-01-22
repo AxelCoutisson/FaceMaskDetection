@@ -5,3 +5,6 @@ models
 utils
 models/*
 utils/*
+dist
+dist/*
+dist/**
