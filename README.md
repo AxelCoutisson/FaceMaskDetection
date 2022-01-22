@@ -24,3 +24,7 @@ pip install -r requirements.txt
 ```console
 python detect.py --source 0
 ``` 
+## Evaluation
+```console
+python val.py --weights best.pt --data ./data/coco.yaml --device cpu --img 640 --iou 0.65 --verbose
+``` 
