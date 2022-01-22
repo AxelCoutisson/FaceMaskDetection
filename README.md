@@ -18,13 +18,25 @@ pip install -r requirements.txt
 ```
 
 ### Windows
-
+```console
+mkdir venv
+python -m venv ./venv
+.\venv\Scripts\activate
+git clone https://github.com/AxelCoutisson/FaceMaskDetection.git
+cd FaceMaskDetection
+pip install -r requirements.txt
+``` 
 ## Start
 
 ```console
-python detect.py --source 0
+python detect.py --source 0 --device cpu --weights best_slim_mask.pt --half --img-size 288
 ``` 
+Alternative plus rapide sur camera et utilisation cpu
+```console
+python detect2.py
+```
+
 ## Evaluation
 ```console
-python val.py --weights best.pt --data ./data/coco.yaml --device cpu --img 640 --iou 0.65 --verbose
+python val.py --weights best_slim_mask.pt --data ./data/coco.yaml --device cpu --img 640 --iou 0.65 --verbose
 ``` 
