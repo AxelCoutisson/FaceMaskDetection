@@ -34,7 +34,12 @@ python -m venv ./venv
 git clone https://github.com/AxelCoutisson/FaceMaskDetection.git
 cd FaceMaskDetection
 pip install -r requirements.txt
-``` 
+```
+En cas d'un soucis d'activation de l'envirronement virtuel cette commande peut réssoudre le problème:
+```console
+Set-ExecutionPolicy -Scope "CurrentUser" -ExecutionPolicy "Unrestricted"
+```
+
 ## Detection
 Voici des exemples pour la detection par camera:
 Détection classique:
